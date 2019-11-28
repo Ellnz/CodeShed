@@ -18,8 +18,6 @@ if ap.Exists(wd + "\\" + "SubsetPatch.gdb")== False:
 else:
     outgdb_path = wd + "\\SubsetPatch.gdb"
 
-# Need function to create 'Excel' within wd, in the case that it is missing.
-
 #replication script
 ap.env.workspace = outgdb_path
 #SubSize = 25        #size of the training feature class subset, can be randomized
