@@ -1,5 +1,5 @@
 # A simple Python script that, for a user-specific number of times, will randomly select a user-specified (%) subset of vector data within a given layer and creates a new layer from that. It then outputs a spreadsheet of derived layer's attribute table.
-
+# Ellis Nimick
 
 # preconfig
 import arcpy as ap, sys, traceback, os, csv
