@@ -1,6 +1,5 @@
 ## Restoration Patch Statistics Figure Maker
-## By Professer H. Buckley for Ellis Nimick's Honours
-## Editted by Ellis Nimick
+## By Professer H. Buckley and Ellis Nimick
 
 # Outputs a single image containing 6 graphs, each displaying a spatial facet of gully-derived restoration patch habitats. 
 # The percentage of selected gullies (for restoration) is plotted against patch area (ha), permiter:area, number of core areas, median core area per patch (ha), core:total patch area and nearest distance (m).
