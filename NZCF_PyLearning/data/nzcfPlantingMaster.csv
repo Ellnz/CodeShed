@@ -1,0 +1,50 @@
+id,forest_id,f_name,plantclass,plantyear,feature,ets_class,ets_class_desc,layer,path_,caa_status,area_ha
+"1",F_208,Pine Hill,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,Active,331.82
+"2",F_203,Kura,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,Active,110.26
+"3",F_204,Pukemanu,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,Active,213.94
+"4",F_207,Range Road,planting area,"2019",Eligible Plantation Area,Post 1989 Eligible,,Range_Road_Planting_Area,C:\Users\LeoPaolini\OneDrive - NZ Carbon Farming\Documents\NZCF_GIS\07_Planting program\2019\Range_Road_Planting_Area.shp,Active,300.34
+"5",F_198,Oporae Station,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,Active,722.53
+"6",F_199,Pukepoto,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,Active,196.25
+"7",F_202,Manganui,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,Active,414.6
+"8",F_209,Haunui,planting area,"2019",Eligible Plantation Area,Post 1989 Eligible,,Haunui_Planting_Area,C:\Users\LeoPaolini\OneDrive - NZ Carbon Farming\Documents\NZCF_GIS\07_Planting program\2019\Haunui_Planting_Area.shp,Active,620.42
+"9",F_201,Patco,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,Active,187.17
+"10",F_85,Makahiwi Station,planting area,"2019",Eligible Plantation Area,Post 1989 eligible,,Makahiwi_Station_Planting_Area,C:\Users\LeoPaolini\OneDrive - NZ Carbon Farming\Documents\NZCF_GIS\07_Planting program\2019\Makahiwi_Station_Planting_Area.shp,Active,666.74
+"11",F_212,Tuscan Hills,planting area,"2019","Eligible Plantation Area, Fencing Required",Post 1989 Eligible,,Tuscan_Hills_Planting_Area,C:\Users\LeoPaolini\OneDrive - NZ Carbon Farming\Documents\NZCF_GIS\07_Planting program\2019\Tuscan_Hills_Planting_Area.shp,Active,929.03
+"12",F_206,Te Rimu,planting area,"2019",Eligible Plantation Area,Post 1989 Eligible,,Gandys_Road_Planting_Area,C:\Users\LeoPaolini\OneDrive - NZ Carbon Farming\Documents\NZCF_GIS\07_Planting program\2019\Gandys_Road_Planting_Area.shp,Active,1168.38
+"13",F_205,Gandys,planting area,"2019",Eligible Plantation Area,Post 1989 Eligible,,Gandys_Road_Planting_Area,C:\Users\LeoPaolini\OneDrive - NZ Carbon Farming\Documents\NZCF_GIS\07_Planting program\2019\Gandys_Road_Planting_Area.shp,Active,121.82
+"14",F_195,Hokonui,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,Active,418.93
+"15",F_214,Putaki,planting area,"2021",Grassland,Eligible,,,,unregistered,784.18
+"16",F_197,Burnage,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,unregistered,911.45
+"17",F_249,Taradale,planting area,"2022",Infrastructure,,,Taradale_PlantingPlan_2022_06_10-2.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Taradale\02_Planting,unregistered,517.53
+"18",F_245,Esdaile,planting area,"2022",Grassland,Eligible,,Esdaile_Planting_Plan.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Esdaile\02_Planting,unregistered,1242.48
+"19",F_229,Glengyle,planting area,"2022",Eligible Plantation Area,Eligible,,,,unregistered,875.89
+"20",F_235,Tanawa,planting area,"2022",Exotic Forest,Non-eligible,,Tanawa_PlantingPlanSetbacks.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Tanawa\02_Planting,unregistered,1304.2
+"21",F_225,Kakanui,planting area,"2021",Grassland,Eligible,,,,unregistered,1565.47
+"22",F_240,McBeths,planting area,"2023",Bluff,Eligible,,McBeths_PlantingPlan_2022-08-02.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\McBeths\02_Planting,unregistered,210.89
+"23",F_244,Annedale,planting area,"2022",Exotic Forest,Non-eligible,,Annedale_PlantingPlan.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Annedale\02_Planting,unregistered,734.92
+"24",F_248,Makakaho,planting area,"2022",Grassland,Eligibile,,Makakaho_Planting plan V2.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Makakaho\02_Planting,unregistered,263.72
+"25",F_259,Mount Mattie,planting area,"2023",Grassland,Eligible,,MountMattie2023_PlantingPlan_20220826_v03.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Mount Mattie\Planting,unregistered,216.65
+"26",F_196,Pukeruru,planting area,"2020",Eligible Plantation Area,Eligible,,,,unregistered,89.97
+"27",F_211,Owairua,planting area,"2020",Eligible Plantation Area,Post 1989 forest,,,,unregistered,265.27
+"28",F_254,Parihauhau,planting area,"2022",Grassland,Eligible,,Parihauhau_PlantingPlan.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Parihauhau\02_Planting,unregistered,291.86
+"29",F_220,Mangatuna,planting area,"2021",Grassland,Eligible,,,,unregistered,384.46
+"30",F_227,Pukekawa,planting area,"2021",Grassland,Eligible,,,,unregistered,515.17
+"31",F_241,Kakara,planting area,"2022",Grassland,,,Kakara_PlantingPlan_2022_07_07.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Kakara\02_Planting,unregistered,482.2
+"32",F_223,Tapuiwahine,planting area,"2021",Grassland,Eligible,,,,unregistered,201.3
+"33",F_218,Te Mahoe,planting area,"2021",Grassland,Eligible,,,,unregistered,267.6
+"34",F_224,Ratanui,planting area,"2021",Grassland,Eligible,,,,unregistered,260.87
+"35",F_217,Rua Rimu,planting area,"2021",Grassland,Eligible,,,,unregistered,438.34
+"36",F_247,Oldbury,planting area,"2022",Grassland,,,Oldbury_PlantingPlan_20220809_3.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Oldbury\02_Planting,unregistered,285.73
+"37",F_251,Inverness,planting area,"2022",Grassland,Eligible,,Inverness_PlantingPlan 220715.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Inverness\02_Planting,unregistered,265.35
+"38",F_242,Rawhitiroa,planting area,"2022",Grassland,Eligible,,MountMattie2023_PlantingPlan_20220826_v03.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Mount Mattie\Planting,unregistered,760.14
+"39",F_226,Kaimango,planting area,"2021",Grassland,Eligible,,,,unregistered,289.99
+"40",F_219,Te Kauri,planting area,"2021",Grassland,Eligible,,,,unregistered,185
+"41",F_216,Kaeo,planting area,"2021",Grassland,Eligible,,,,unregistered,181.62
+"42",F_228,Omana West,planting area,"2021",Grassland,Eligible,,,,unregistered,65.66
+"43",F_222,Pairama,planting area,"2021",Grassland,Eligible,,,,unregistered,594.23
+"44",F_210,Mangatiti,planting area,"2020",Eligible Plantation Area,Post 1989 eligible,,,,unregistered,706.25
+"45",F_200,Puketai,planting area,"2020",Eligible Plantation Area,Grassland since 1990,,,,unregistered,442.09
+"46",F_250,Te Anga,planting area,"2023",Track Setback,Eligible,,Te Anga_Area1_PlantableArea.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Te Anga\02_Planting,unregistered,379.77
+"47",F_236,Taumatamaire,planting area,"2022",Grassland,,,Taumatamaire_PlantingPlan_2022_06_17.shp,D:\NZ Carbon Farming\NZCF GIS - General\00_Properties\Taumatamaire\02_Planting,unregistered,245.28
+"48",F_221,Omana,planting area,"2021",Grassland,Eligible,,,,unregistered,87.99
+"49",F_164,Otama,planting area,"2021",Grassland,Eligible,,,,unregistered,162.63

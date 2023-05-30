@@ -1,0 +1,104 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "d96dbaa5-6471-44fe-ae68-28f23fc8379b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "from plotnine import *\n",
+    "from mizani.breaks import date_breaks\n",
+    "from mizani.formatters import date_format\n",
+    "%matplotlib inline\n",
+    "\n",
+    "import pyodbc \n",
+    "pyodbc.drivers() \n",
+    "import sqlite3 as sq \n",
+    "from sqlalchemy.engine import URL \n",
+    "from sqlalchemy import create_engine "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "08c44692-2368-4e42-ab83-534eb704d169",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "server = 'tcp:nzforestleasing-sql-au-e-prod.database.windows.net'  \n",
+    "database = 'ESTATE'  \n",
+    "username = 'ellis.nimick@nzcarbonfarming.co.nz'  \n",
+    "password = 'password' "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "288bf432-715f-47c0-9f26-d20f75ba3191",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 'NEW' way to connect to be able to pull the column name of each table \n",
+    "connection_string = 'Driver={ODBC Driver 18 for SQL Server};Server='+server+',1433;Database='+database+';Uid='+username+';Pwd='+password+';Encrypt=yes;TrustServerCertificate=no;Connection Timeout=180;Authentication=ActiveDirectoryInteractive' \n",
+    "connection_url = URL.create(\"mssql+pyodbc\", query={\"odbc_connect\": connection_string}) \n",
+    "engine = create_engine(connection_url)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "4e85badd-fa1d-43c8-927b-47fb9706f907",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "InterfaceError",
+     "evalue": "('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified (0) (SQLDriverConnect)')",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mInterfaceError\u001b[0m                            Traceback (most recent call last)",
+      "Input \u001b[1;32mIn [11]\u001b[0m, in \u001b[0;36m<cell line: 2>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[38;5;66;03m# Add lines to use 'NORMAL' SQL queries \u001b[39;00m\n\u001b[1;32m----> 2\u001b[0m connection \u001b[38;5;241m=\u001b[39m \u001b[43mpyodbc\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mconnect\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43mDriver=\u001b[39;49m\u001b[38;5;124;43m{\u001b[39;49m\u001b[38;5;124;43mODBC Driver 18 for SQL Server};Server=\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[43mserver\u001b[49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43m,1433;Database=\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[43mdatabase\u001b[49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43m;Uid=\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[43musername\u001b[49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43m;Pwd=\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[43mpassword\u001b[49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[38;5;124;43m;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=180;Authentication=ActiveDirectoryInteractive\u001b[39;49m\u001b[38;5;124;43m'\u001b[39;49m\u001b[43m)\u001b[49m \n\u001b[0;32m      3\u001b[0m cursor \u001b[38;5;241m=\u001b[39m connection\u001b[38;5;241m.\u001b[39mcursor()\n",
+      "\u001b[1;31mInterfaceError\u001b[0m: ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified (0) (SQLDriverConnect)')"
+     ]
+    }
+   ],
+   "source": [
+    "# Add lines to use 'NORMAL' SQL queries \n",
+    "connection = pyodbc.connect('Driver={ODBC Driver 18 for SQL Server};Server='+server+',1433;Database='+database+';Uid='+username+';Pwd='+password+';Encrypt=yes;TrustServerCertificate=no;Connection Timeout=180;Authentication=ActiveDirectoryInteractive') \n",
+    "cursor = connection.cursor()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0c3638ac-241f-4893-9b24-5a043181e5c4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
